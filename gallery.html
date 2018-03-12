@@ -28,6 +28,62 @@ veterinary cardiology website, pediatric cardiology website">
       <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
       <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
     <![endif]-->
+
+<style>
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+}
+
+#galary .row {
+    display: -ms-flexbox; /* IE10 */
+    display: flex;
+    -ms-flex-wrap: wrap; /* IE10 */
+    flex-wrap: wrap;
+    padding: 0 4px;
+}
+
+/* Create four equal columns that sits next to each other */
+.column {
+    -ms-flex: 25%; /* IE10 */
+    flex: 25%;
+    max-width: 25%;
+    padding: 0 4px;
+}
+
+.column img {
+    margin-top: 8px;
+    vertical-align: middle;
+}
+
+/* Responsive layout - makes a two column-layout instead of four columns */
+@media (max-width: 800px) {
+    .column {
+        -ms-flex: 50%;
+        flex: 50%;
+        max-width: 50%;
+    }
+}
+
+/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+@media (max-width: 600px) {
+    .column {
+        -ms-flex: 100%;
+        flex: 100%;
+        max-width: 100%;
+    }
+}
+    
+/*preventing overflow*/
+html{overflow-x: hidden !important;}
+@media only screen and (max-device-width:736px){html,body{overflow-x: hidden !important;}}    
+    
+    
+</style>
+
 </head>
 <body class="animsition">
 <div class="top-header"><!-- top header -->
@@ -37,7 +93,7 @@ veterinary cardiology website, pediatric cardiology website">
       <div class="col-md-9 hidden-sm hidden-xs">
         <div class="top-link">
           <div class="row">
-            <div class="col-md-6">
+            <div class="col-md-3">
               <!--i class="fa fa-clock-o"></i>Sunday: 6:30, 9:00, 11:00-->
             </div>
             <div class="col-md-3">
@@ -46,13 +102,16 @@ veterinary cardiology website, pediatric cardiology website">
             <div class="col-md-3">
               <i class="fa fa-envelope-o"></i> <a href="cantact-us.html">kucu@gmail.com</a>
             </div>
+            <div class="col-md-3">
+              <a href="register.html"><button class="btn btn-sign btn" role="button">REGISTER</button></a>
+            </div>
           </div>
         </div>
       </div>
     </div>
   </div>
 </div><!-- top header -->
-<div class="page-header"><!-- page header -->
+
   <div class=""><!-- navigation-transparent -->
     <div class="header"><!-- navigation -->
       <div class="container">
@@ -84,7 +143,7 @@ veterinary cardiology website, pediatric cardiology website">
                       </ul>
                 </li>
                 <li><a href="programs.html" title="Programs" class="animsition-link">Programs</a></li>
-                <li><a href="#" title="Contact Us" class="animsition-link">Blog</a></li>
+                <li><a href="https://kucublog.wordpress.com" title="Contact Us" class="animsition-link">Blog</a></li>
                 <li><a href="contact-us.html" title="Contact Us" class="animsition-link">Contact Us</a></li>
 
                 </ul>
@@ -99,132 +158,49 @@ veterinary cardiology website, pediatric cardiology website">
       </div>
     </div>
   </div>
+
   <!-- /.navigation -->
   <!-- /.navigation -->
-  <div class="container">
-    <div class="row">
-      <div class="col-md-12 col-sm-12 text-center">
-        <div class="page-caption">
-          <h1 class="page-title">Gallery</h1>
-        </div>
-      </div>
-    </div>
-  </div>
-</div>
-<!-- /.page header -->
+
 
 <!--content-->
-<div class="row">
+<!-- Photo Grid -->
+<div id="galary" class="row"> 
   <div class="column">
-    <img class="img" src="images/img1.JPG" onclick="openModal();currentSlide(1)" class="hover-shadow">
-  </div>
-  <div class="column">
-    <img class="img" src="images/img2.jpg" onclick="openModal();currentSlide(2)" class="hover-shadow">
-  </div>
-  <div  class="column">
-    <img class="img" src="images/img3.jpg" onclick="openModal();currentSlide(3)" class="hover-shadow">
-  </div>
-  <div class="column">
-    <img class="img" src="images/img4.JPG" onclick="openModal();currentSlide(4)" class="hover-shadow">
+    <img src="images/btl.jpg" style="width:100%">
+    <img src="images/exec3.jpg" style="width:100%">
+    <img src="images/singing.jpg" style="width:100%">
+    <img src="images/choir.JPG" style="width:100%">
+    <img src="images/vc.jpg" style="width:100%">
+    <img src="images/asf.jpg" style="width:100%">
+    <img src="images/insidechapel.jpg" style="width:100%">
   </div>
   <div class="column">
-    <img class="img" src="images/img1.JPG" onclick="openModal();currentSlide(5)" class="hover-shadow">
+    <img src="images/btl.jpg" style="width:100%">
+    <img src="images/exec3.jpg" style="width:100%">
+    <img src="images/singing.jpg" style="width:100%">
+    <img src="images/choir.JPG" style="width:100%">
+    <img src="images/vc.jpg" style="width:100%">
+    <img src="images/asf.jpg" style="width:100%">
+    <img src="images/insidechapel.jpg" style="width:100%">
+  </div>  
+  <div class="column">
+    <img src="images/btl.jpg" style="width:100%">
+    <img src="images/exec3.jpg" style="width:100%">
+    <img src="images/singing.jpg" style="width:100%">
+    <img src="images/choir.JPG" style="width:100%">
+    <img src="images/vc.jpg" style="width:100%">
+    <img src="images/asf.jpg" style="width:100%">
+    <img src="images/insidechapel.jpg" style="width:100%">
   </div>
   <div class="column">
-    <img class="img" src="images/img2.jpg" onclick="openModal();currentSlide(6)" class="hover-shadow">
-  </div>
-  <div class="column">
-    <img class="img" src="images/img3.jpg" onclick="openModal();currentSlide(7)" class="hover-shadow">
-  </div>
-  <div class="column">
-    <img class="img" src="images/img4.JPG" onclick="openModal();currentSlide(8)" class="hover-shadow">
-  </div>
-</div>
-
-<!-- The Modal/Lightbox -->
-<div id="myModal" class="modal">
-  <span class="close cursor" onclick="closeModal()">&times;</span>
-  <div class="modal-content">
-
-    <div class="mySlides">
-      <div class="numbertext">1 / 8</div>
-      <img src="images/img1.JPG" style="width:100%">
-    </div>
-
-    <div class="mySlides">
-      <div class="numbertext">2 / 8</div>
-      <img src="images/img2.jpg" style="width:100%">
-    </div>
-
-    <div class="mySlides">
-      <div class="numbertext">3 / 8</div>
-      <img src="images/img3.jpg" style="width:100%">
-    </div>
-
-    <div class="mySlides">
-      <div class="numbertext">4 / 8</div>
-      <img src="images/img4.JPG" style="width:100%">
-    </div>
-    <div class="mySlides">
-      <div class="numbertext">5 / 8</div>
-      <img src="images/img1.JPG" style="width:100%">
-    </div>
-
-    <div class="mySlides">
-      <div class="numbertext">6 / 8</div>
-      <img src="images/img2.jpg" style="width:100%">
-    </div>
-
-    <div class="mySlides">
-      <div class="numbertext">7 / 8</div>
-      <img src="images/img3.jpg" style="width:100%">
-    </div>
-
-    <div class="mySlides">
-      <div class="numbertext">8 / 8</div>
-      <img src="images/img4.JPG" style="width:100%">
-    </div>
-
-    <!-- Next/previous controls -->
-    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-    <a class="next" onclick="plusSlides(1)">&#10095;</a>
-
-    <!-- Caption text -->
-    <div class="caption-container">
-      <p id="caption"></p>
-    </div>
-
-    <!-- Thumbnail image controls -->
-    <div class="column">
-      <img class="demo" src="images/img1.JPG" onclick="currentSlide(1)" alt="Nature">
-    </div>
-
-    <div class="column">
-      <img class="demo" src="images/img2.jpg" onclick="currentSlide(2)" alt="Trolltunga">
-    </div>
-
-    <div class="column">
-      <img class="demo" src="images/img3.jpg" onclick="currentSlide(3)" alt="Mountains">
-    </div>
-
-    <div class="column">
-      <img class="demo" src="images/img4.JPG" onclick="currentSlide(4)" alt="Lights">
-    </div>
-    <div class="column">
-      <img class="demo" src="images/img1.JPG" onclick="currentSlide(1)" alt="Nature">
-    </div>
-
-    <div class="column">
-      <img class="demo" src="images/img2.jpg" onclick="currentSlide(2)" alt="Trolltunga">
-    </div>
-
-    <div class="column">
-      <img class="demo" src="images/img3.jpg" onclick="currentSlide(3)" alt="Mountains">
-    </div>
-
-    <div class="column">
-      <img class="demo" src="images/img4.JPG" onclick="currentSlide(4)" alt="Lights">
-    </div>
+    <img src="images/btl.jpg" style="width:100%">
+    <img src="images/exec3.jpg" style="width:100%">
+    <img src="images/singing.jpg" style="width:100%">
+    <img src="images/choir.JPG" style="width:100%">
+    <img src="images/vc.jpg" style="width:100%">
+    <img src="images/asf.jpg" style="width:100%">
+    <img src="images/insidechapel.jpg" style="width:100%">
   </div>
 </div>
 <!--end of gallery content-->
@@ -293,6 +269,7 @@ news to your inbox.</p>
         <a href="https://www.facebook.com/kucumaincampus/"><i class="social fa fa-facebook" aria-hidden="true"></i></a>
         <a href="https://www.instagram.com/kucumaincampus/"><i class="social fa fa-instagram" aria-hidden="true"></i></a>
         <a href="https://twitter.com/KucuOnline"><i class="social fa fa-twitter" aria-hidden="true"></i></a>
+        <a href="https://www.flickr.com/people/155767133@N06/"><i class="social fa fa-flickr" aria-hidden="true"></i></a>
       </div>
     </div>
   </div>

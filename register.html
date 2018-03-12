@@ -1,0 +1,281 @@
+<!doctype html>
+<html class="no-js" lang="en">
+        <meta charset="utf-8">
+        <title>KUCU Registration</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="icon" type="image/png" href="favicon.png">
+
+        <!--Google Font link-->
+        <link href="https://fonts.googleapis.com/css?family=Raleway:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+		
+		<!--Sweet Alert-->
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/limonte-sweetalert2/7.11.0/sweetalert2.css" />
+<script src="https://cdnjs.cloudflare.com/ajax/libs/limonte-sweetalert2/7.11.0/sweetalert2.all.min.js"></script>
+    
+
+        <link rel="stylesheet" href="assets/css/slick/slick.css"> 
+        <link rel="stylesheet" href="assets/css/slick/slick-theme.css">
+        <link rel="stylesheet" href="assets/css/animate.css">
+        <link rel="stylesheet" href="assets/css/iconfont.css">
+        <link rel="stylesheet" href="assets/css/font-awesome.min.css">
+        <link rel="stylesheet" href="assets/css/bootstrap.css">
+        <link rel="stylesheet" href="assets/css/magnific-popup.css">
+        <link rel="stylesheet" href="assets/css/style.css">
+        <link rel="stylesheet" href="assets/css/responsive.css" />
+        <script src="assets/js/vendor/modernizr-2.8.3-respond-1.4.2.min.js"></script>
+    </head>
+
+    <body data-spy="scroll" data-target=".navbar-collapse">
+
+        <!-- Preloader -->
+        <div id="loading">
+            <div id="loading-center">
+                <div id="loading-center-absolute">
+                    <div class="object" id="object_one"></div>
+                    <div class="object" id="object_two"></div>
+                    <div class="object" id="object_three"></div>
+                    <div class="object" id="object_four"></div>
+                </div>
+            </div>
+        </div><!--End off Preloader -->
+        
+        
+<!--SIGN UP FORM-->
+        
+<div class="fluid">
+<div class="signup section-padded">
+	<div class="container">
+        <form action="Reg" method="post" onsubmit="myFunction()">
+		<div class="row information">
+            <div class="col-md-12">
+			<div class="col-md-12">
+				<div class="input-group input-group-lg wow fadeInUp" style="background-color: #00a885;">
+					<img src="assets/images/logo.jpg" alt="" class="icon" height="100" width="" style="margin-top: 20px;">
+					<h3 class="up" style="color:#fff;">REGISTER</h3>
+				</div>
+				<div class="input-group input-group-lg wow fadeInUp">
+				    <label class="lname" style="float:left;">First Name</label>
+					
+                    <!--FIRST NAME-->
+					<input type="text" class="form-control contact-form" aria-describedby="sizing-addon1" required  name="fName">
+                    
+				</div>
+				<div class="input-group input-group-lg wow fadeInUp">
+				    <label class="lname" style="float:left;">Last Name</label>
+                    
+					<!--LAST NAME-->
+					<input type="text" class="form-control contact-form" aria-describedby="sizing-addon1" required name="lName">
+                    
+				</div>
+				<div class="input-group input-group-lg wow fadeInUp">
+				    <label class="lname" style="float:left;">Registration Number</label>
+                    
+					<!--REG.NO-->
+					<input type="text" class="form-control contact-form" aria-describedby="sizing-addon1" required name="regNo">
+                    
+				</div>
+				<div class="input-group input-group-lg wow fadeInUp">
+				    <label class="lname" style="float:left;">Phone Number</label>
+                    
+					<!--PHONE NO.-->
+					<input type="number" class="form-control contact-form" aria-describedby="sizing-addon1" required name="phoneNo">
+                    
+				</div>
+				<div class="input-group input-group-lg wow fadeInUp">
+				    <label class="lname" style="float:left;">Email Address</label>
+                    
+					<!--EMAIL ADDRESS-->
+					<input type="text" class="form-control contact-form" aria-describedby="sizing-addon1" required name="email">
+                    
+				</div>
+				<div class="input-group input-group-lg wow fadeInUp">
+				    <label class="lname" style="float:left;">Year of Study</label>
+					<!--YEAR OF STUDY-->
+					<select id="year" required name="yrStudy">
+					  <option value="1" type="number">1</option>
+					  <option value="2" type="number">2</option>
+					  <option value="3" type="number">3</option>
+					  <option value="4" type="number">4</option>
+					  <option value="5" type="number">5</option>
+					  <option value="6" type="number">6</option>
+    				</select>
+				</div>
+                <div class="input-group input-group-lg wow fadeInUp">
+				    <label class="lname" style="float:left;">How many years does your course take?</label>
+					<!--COURSE DURATION-->
+					<select id="year" required name="courseDuration">
+					  <option value="1" type="number">1</option>
+					  <option value="2" type="number">2</option>
+					  <option value="3" type="number">3</option>
+					  <option value="4" type="number">4</option>
+					  <option value="5" type="number">5</option>
+					  <option value="6" type="number">6</option>
+    				</select>
+				</div>
+                <div class="input-group input-group-lg wow fadeInUp">
+				<div class="radio">
+					<!--GENDER-->
+					<select id="gender" required name="gender">
+					  <option value="male">Male</option>
+					  <option value="femal">Female</option>
+    				</select>
+    			</div>
+				</div>
+                
+				<div class="input-group input-group-lg wow fadeInUp">
+					<label class="lname" style="float:left;">Are you a Resident or Non-resident?</label>
+				<div class="radio">
+					<!--ZONE-->
+      				<select id="state" required name="residence" onclick='test()'>
+                      <option value="">Select</option>
+					  <option value="resident">Resident</option>
+					  <option value="nonresident">Non-resident</option>
+    				</select>
+    			</div>
+				</div>
+                
+<!--
+                <button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal">Open Modal</button>
+                
+-->
+                 <div class="input-group input-group-lg wow fadeInUp" id="resident" style="display: none;"> 
+					<label class="lname" style="float:left;">In which Zone do you stay? </label><button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal" style="padding: 4px 6px; background-color:#00a885; border-color: #00a885;outline: none; margin-bottom: 10px; margin-left: 10px;">Know your Zone</button>
+					<select  name="zone">
+					  <option value="resi">Nyayo Zone</option>
+					  <option value="resi">Western Zone</option>
+                      <option value="resi">Eastern Zone</option>
+    				</select>
+				</div>
+			    <div class="input-group input-group-lg wow fadeInUp" id="non-resident" style="display: none;">
+					<label class="lname" style="float:left;">Where do you stay?</label>
+					<select name="zone"id="kenyattamarket" onclick='hostel()'>
+                      <option value="">Select</option>
+					  <option value="km">Kenyatta Market (KM)</option>
+					  <option value="kahawawest">Kahawa West</option>
+					  <option value="kahawasukari">Kahawa Sukari</option>
+					  <option value="kahawawendani">Kahawa Wendani</option>
+					  <option value="githurai">Githurai</option>
+					  <option value="roysambu">Roysambu</option>
+					  <option value="bypass">Bypass,Membly,Kihunguro</option>
+					  <option value="ruiru">Ruiru</option>
+					  <option value="juja">Juja</option>
+					  <option value="other">Other</option>
+    				</select>
+				</div>
+                <div class="input-group input-group-lg wow fadeInUp" id="kenyatta" style="display: none;">
+					<label class="lname" style="float:left;">Around which hostel do you stay?</label>
+					<select name="zone">
+					  <option value="kahawawest">Ebenezer</option>
+					  <option value="kahawasukari">Peniel</option>
+					  <option value="kahawawendani">Campus View</option>
+					  <option value="githurai">Kiwanja</option>
+    				</select>
+				</div>
+                <div class="input-group input-group-lg wow fadeInUp">
+					<label class="lname" style="float:left;">Are you interested in becoming a bible study Facilitator?</label>
+				<div class="radio">
+					<!--BIBILE STUDY FACILITOTOR-->
+      				<select id="facil" required name="facil">
+					  <option value="resident">Yes</option>
+					  <option value="nonresident">No</option>
+    				</select>
+    			</div>
+				</div>
+				<div class="input-group input-group-lg wow fadeInUp" >
+				<form>
+				  <input type="checkbox"  value="agree" required> <a target="_blank" href="Kucu-constitution.pdf"> Agree with KUCU terms and conditions.</a><br> 
+				</form>
+				</div>
+			</div>
+			<div class=" col-md-12 wow fadeInUp" >
+				<button type="submit" class="btn btn-lg wow fadeInUp" data-wow-delay="2.4s"><b>Submit</b></button>
+			</div>
+            </div>
+		</div>
+        </form>
+	</div>
+</div>
+</div>
+<!--END OF SIGN UP FORM-->
+	
+<!--START OF COPYRIGHT-->
+<div class="row copyright" >
+	<p class=" wow fadeInUp" data-wow-delay="2.6s">&copy; 2018 Kenyatta University Christian Union-Main Campus. All Rights Reservered | Powered by:The Grace of God</p>
+</div>
+<!--END OF COPYRIGHT-->	
+        
+        
+ <!-- Modal -->
+  <div class="modal fade" id="myModal" role="dialog" style="z-index: inherit;">
+    <div class="modal-dialog">
+    
+      <!-- Modal content-->
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+          <h4 class="modal-title">Hostels found in each Zone</h4>
+        </div>
+        <div class="modal-body">
+          <b>Eastern Zone</b>
+            <p>Nyandarua</p>
+            <p>Aberdares</p>
+            <p>Mfumbiro</p>
+            <p>Menengai</p>
+           <b>Western Zone</b>
+            <p>Usambara</p>
+            <p>Ruwenzori</p>
+            <p>Lukenya</p>
+            <p>Ngong</p>
+            <p>Longonot</p>
+         <b>Nyayo Zone</b>
+            <p>Nyayo 1-6</p>
+            
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+      
+    </div>
+  </div>
+
+    
+
+        <!-- JS includes -->
+
+        <script src="assets/js/vendor/jquery-1.11.2.min.js"></script>
+        <script src="assets/js/vendor/bootstrap.min.js"></script>
+        <script src="assets/js/main.js"></script>
+        
+      <!-- Displaying the forms -->  
+        <script>
+        function test() {
+            if (document.getElementById('state').value == 'resident') {
+                document.getElementById('resident').style.display = 'block';
+                document.getElementById('non-resident').style.display = 'none';
+            } else {
+                document.getElementById('non-resident').style.display = 'block';
+                document.getElementById('resident').style.display = 'none';
+            }
+        }
+            
+        function hostel() {
+            if (document.getElementById('kenyattamarket').value == 'km') {
+                document.getElementById('kenyatta').style.display = 'block';
+            } else {
+                document.getElementById('kenyatta').style.display = 'none';
+            }
+        }
+            
+            
+            	function myFunction() {
+		              sweetAlert("Congrats!", "success");
+                }
+
+        </script>
+        
+
+    </body>
+</html>

@@ -212,7 +212,7 @@ strong{ font-weight: 600;}
 .italic{font-style: italic;}
 .small{font-size: 14px;}
 *, *::before, *::after { transition: all .3s ease-in-out; }
-
+abbr[title]{border-bottom: none;text-decoration: none;}
 /*---------------- title class ------------*/
 .title{color: #333333;}
 .heading-title{color: #2f2f2f;}

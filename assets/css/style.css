@@ -1,0 +1,163 @@
+ body{
+	 background-image: url(../images/imag.jpg);
+	 background-size: cover;
+  	 background-position: center center;
+	 background-repeat: no-repeat;
+	 background-attachment: fixed;
+}
+abbr[title] {
+        border-bottom: none !important;
+        cursor: inherit !important;
+        text-decoration: none !important;
+    }
+/*preventing overflow*/
+html{overflow-x: hidden !important;}
+@media only screen and (max-device-width:736px){html,body{overflow-x: hidden !important;}}
+
+.container-fluid {
+      padding-top: 80px;
+  }
+
+/* preloader section */
+.preloader  {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        z-index: 99999;
+        display: -webkit-flex;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-flex-flow: row nowrap;
+            -ms-flex-flow: row nowrap;
+                flex-flow: row nowrap;
+        -webkit-justify-content: center;
+            -ms-flex-pack: center;
+                justify-content: center;
+        -webkit-align-items: center;
+            -ms-flex-align: center;
+                align-items: center;
+        background: none repeat scroll 0 0 #fff;
+    }
+.sk-spinner-pulse {
+  width: 100px;
+  height: 100px;
+  background-color: #DF405A;
+  border-radius: 100%;
+  -webkit-animation: sk-pulseScaleOut 1s infinite ease-in-out;
+          animation: sk-pulseScaleOut 1s infinite ease-in-out; }
+
+@-webkit-keyframes sk-pulseScaleOut {
+  0% {
+    -webkit-transform: scale(0);
+            transform: scale(0); }
+  100% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+    opacity: 0; } }
+
+@keyframes sk-pulseScaleOut {
+  0% {
+    -webkit-transform: scale(0);
+            transform: scale(0); }
+  100% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+    opacity: 0; } }
+
+
+/*----START SIGN UP FORM----*/
+.signup{
+	text-align: center;
+	padding: 50px 0 80px;
+	margin-left: 30%;
+	margin-right: 30%;
+	width: 500px;
+	background-color: #000;
+	margin-top: 50px;
+	margin-bottom: 30px;
+	font-size: 16px;
+	font-family: 'Lato', sans-serif;
+
+/*	box-shadow: 0 2px 4px 0 rgba(167,156,142,0.52);*/
+}
+.signup p{
+	padding-bottom: 80px;
+	color: #737373;
+}
+.signup h2{
+	color: #4c4c4c;
+	margin: 20px 0 20px;
+}
+.signup .input-group{
+	margin-bottom: 20px;
+	width: 400px;
+}
+
+input[type=text],
+input[type=number],select {
+    width: 100%;
+/*
+    padding: 10px 20px;
+    margin: 8px ;
+    display: block;
+    border: 0px solid #333;
+*/
+    box-sizing: border-box;
+    background: #333;
+    color: #fff;
+    font-weight: normal;
+    border: 0;
+    outline: 0;
+    background: transparent;
+    border-bottom: 1px solid #00a885;
+}
+
+
+select {
+    width: 100%;
+    padding: 10px 20px;
+    margin: 8px ;
+    display: block;
+    border: 0px solid #333;
+/*    box-sizing: border-box;*/
+    background: #333;
+    color: #fff;
+    font-weight: normal;
+}
+label{color: #00a885;   font-weight:normal;}
+.signup .btn{
+	border-radius: 5px;
+	font-size: 15;
+	width: 200px;
+	float: left;
+	background-color: #DF405A;
+	color: #fff;
+}
+.signup .btn:hover{
+	background-color: #aa59ff !important;
+	color: #fff !important;
+}
+.signup .contact-form, .contact span{height: 40px ! important;}
+.radio{float: left;}
+.radioo{height: 15px; width: 15px;}
+
+@media(max-width: 768px){
+	body{padding: 0; width: 100%;}
+}
+@media screen and (max-width: 1024px){
+    .signup{text-align: center; padding: 50px 0 80px; margin: 0; width: 100%;}
+	.signup .input-group{margin-bottom: 25px; width: 100%;}
+}
+@media screen and (max-width: 640px){
+	.signup{text-align: center; padding: 50px 0 80px; margin: 0; width: 100%;}
+	.signup .input-group{margin-bottom: 25px; width: 100%;}
+}
+/*----END SIGN UP FORM----*/
+
+/*----START FOOTER & COPYRIGHT----*/
+.copyright{background-color: #000; padding-top: 15px;padding-bottom: 5px;margin-top: 0; text-align: center;color: #808080;}
+.copyright{font-family: 'Josefin Sans', sans-serif;}
+/*----END FOOTER & COPYRIGHT----*/
+
